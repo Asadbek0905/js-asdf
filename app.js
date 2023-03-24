@@ -1,10 +1,13 @@
-let inp = document.querySelector("input")
-let btn = document.querySelector("button")
+let ab = +prompt("Sovg'ani narxini kiriting")
 
-btn.onclick = () => {
-    if(inp.value == "Asadbek"){
-        document.write(`To'gri ism topdingiz : ${inp.value}`)
+function personalPrice(a, b, s, d) {
+    let jami = a + b + s + d
+
+    if(jami <= ab){
+        alert("Ha pulingiz yetadi");
     }else{
-        document.write(`Natog'ri ism topdingiz : ${inp.value}`)
+        alert("Yoq pulingiz yetmaydi");
     }
 }
+
+console.log(personalPrice(20, 10, 30, 20));
