@@ -41,3 +41,60 @@ input{
     justify-content: center;
     padding-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 575px){
+    .div {
+        margin-top: 50px;
+        width: 376px;
+        height: 165px;
+        background: rgba(67, 104, 141, 0.267);
+        padding-top: 47px;
+        border-radius: 20px;
+        padding-left: 13px;
+    }
+    input {
+        width: 335px;
+        border-radius: 20px;
+        height: 50px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+    .b1 {
+        background: green;
+        border-radius: 10px;
+        border: none;
+        width: 90px;
+        height: 50px;
+        margin-left: 74px;
+        margin-top: 8px;
+    }
+    .b2 {
+        background: red;
+        border-radius: 10px;
+        border: none;
+        width: 90px;
+        height: 50px;
+        margin-left: 3px;
+    }
+    .to {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+}
