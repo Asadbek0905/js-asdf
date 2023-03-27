@@ -1,100 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+.flex{
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border: 3px solid turquoise;
 }
-
-.div{
-    margin-top: 50px;
-    width: 800px;
-    height: 150px;
-    background: rgba(67, 104, 141, 0.267);
-    padding-top: 50px;
-    border-radius: 20px;
-    padding-left: 13px;
-}
-.b1{
-    background: green;
-    border-radius: 10px;
-    border: none;
-    width: 90px;
-    height: 50px;
-}
-.b2{
-    background: red;
-    border-radius: 10px;
-    border: none;
-    width: 90px;
-    height: 50px;
-}
-input{
-    width: 580px;
-    border-radius: 20px;
-    height: 50px;
-    border: none;
-    padding-left: 10px;
-    outline: none;
-}
-.to{
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
     display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
 }
 
+.w{
+    width: 170px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 0 40px 0 40px;
+}
+.e{
+    width: 160px;
+    margin-left: 10px;
+    height: 50px;
+    border-radius: 40px 0 40px 0;
+}
 
+.father{
+    display: flex;
+    margin-left: 320px;
+    margin-top: 50px;
+}
+.dflex{
+    width: 160px;
+    height: 50px;
+    background: rgba(50, 192, 29, 0.919);
+    border: none;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.dflex:hover{
+    box-shadow: 0px 0px 30px 0px rgba(50, 192, 29, 0.919);
+    transition: .3s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width : 575px){
-    .div {
-        margin-top: 50px;
-        width: 376px;
-        height: 165px;
-        background: rgba(67, 104, 141, 0.267);
-        padding-top: 47px;
-        border-radius: 20px;
-        padding-left: 13px;
-    }
-    input {
-        width: 335px;
-        border-radius: 20px;
-        height: 50px;
-        border: none;
-        padding-left: 10px;
-        outline: none;
-    }
-    .b1 {
-        background: green;
-        border-radius: 10px;
-        border: none;
-        width: 90px;
-        height: 50px;
-        margin-left: 74px;
-        margin-top: 8px;
-    }
-    .b2 {
-        background: red;
-        border-radius: 10px;
-        border: none;
-        width: 90px;
-        height: 50px;
-        margin-left: 3px;
-    }
-    .to {
-        padding-top: 16px;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 30px;
-    }
-
+.w:hover{
+    box-shadow: 0px 0px 20px 0px blue;
+    transition: .3s;
+    border-radius: 10px;
+    background: blue;
+    color: #fff;
+    border: none;
+}
+.e:hover{
+    box-shadow: 0px 0px 20px 0px red;
+    transition: .3s;
+    border-radius: 10px;
+    background: red;
+    color: #fff;
+    border: none;
 }

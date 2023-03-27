@@ -1,45 +1,36 @@
-let ab = +prompt("Sovg'ani narxini kiriting")
+let flex = document.querySelector(".flex")
+let btn = document.querySelector(".dflex")
+let just = document.querySelector(".just")
+let just1 = document.querySelector(".just1")
+let ali = document.querySelector(".ali")
+let ali1 = document.querySelector(".ali1")
+let box = document.querySelectorAll(".box")
+let just2 = document.querySelector(".just2")
+let ali2 = document.querySelector(".ali2")
 
-function personalPrice(a, b, s, d) {
-    let jami = a + b + s + d
-
-    if(jami <= ab){
-        alert("Ha pulingiz yetadi");
-    }else{
-        alert("Yoq pulingiz yetmaydi");
-    }
+btn.onclick = () => {
+    flex.style.display = "flex"
 }
 
-console.log(personalPrice(20, 10, 30, 20));
+just2.onclick = () =>{
+    flex.style.justifyContent = "start"
+}
 
+just.onclick = () =>{
+    flex.style.justifyContent = "center"
+}
 
+just1.onclick = () =>{
+    flex.style.justifyContent = "end"
+}
 
+ali.onclick = () =>{
+    flex.style.alignItems = "center"
+}
+ali2.onclick = () =>{
+    flex.style.alignItems = "start"
+}
 
-
-
-
-
-
-
-
-
-
-
-
-// let inp = document.querySelector("input")
-// let btn = document.querySelector(".b1")
-// let text = document.querySelector("h1")
-// let btn1 = document.querySelector(".b2")
-
-// btn.onclick = () => {
-//     text.innerHTML = `
-//     <h1 class="to">${inp.value}</h1>
-//     `
-//     inp.value = ""
-// }
-
-// btn1.onclick = () => {
-//     text.innerHTML = `
-//     <h1 class="to">ToDo List</h1>
-//     `
-// }
+ali1.onclick = () =>{
+    flex.style.alignItems = "end"
+}
