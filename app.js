@@ -12,25 +12,44 @@ btn.onclick = () => {
     flex.style.display = "flex"
 }
 
-just2.onclick = () =>{
+just2.onclick = () => {
     flex.style.justifyContent = "start"
 }
 
-just.onclick = () =>{
+just.onclick = () => {
     flex.style.justifyContent = "center"
 }
 
-just1.onclick = () =>{
+just1.onclick = () => {
     flex.style.justifyContent = "end"
 }
 
-ali.onclick = () =>{
+ali.onclick = () => {
     flex.style.alignItems = "center"
 }
-ali2.onclick = () =>{
+ali2.onclick = () => {
     flex.style.alignItems = "start"
 }
 
-ali1.onclick = () =>{
+ali1.onclick = () => {
     flex.style.alignItems = "end"
+}
+
+
+
+
+
+
+
+let vtn = document.querySelector(".vtn")
+
+
+vtn.onclick = () => {
+    let a = +prompt("1-qizda qancha pul borligini yozing")
+    let b = +prompt("2-qizda qancha pul borligini yozing")
+    let c = +prompt("3-qizda qancha pul borligini yozing")
+    let d = +prompt("4-qizda qancha pul borligini yozing")
+    let f = +prompt("Sovg'aning narxini yozing")
+    let all = a + b + c + d
+    all <= f ? alert("Ha pulingiz yetadi") : alert("Yoq pulingiz yetmaydi")
 }

@@ -59,37 +59,28 @@
     background: red;
     color: #fff;
     border: none;
+
+}
+
+.p{
+    margin-top: 100px;
+}
+
+.vtn{
+    width: 150px;
+    height: 50px;
+    margin-top: 100px;
+    color: #fff;
+    border: none;
+    background: rgb(36, 20, 183);
 }
 
 
 
 
-@media (max-width: 575px){
-    .flex {
-        width: 693px;
-        height: 544px;
-        margin-left: 107px;
-        margin: auto;
-        margin-top: 100px;
-        border: 3px solid turquoise;
-    }
-    .w {
-        width: 190px;
-        height: 66px;
-        margin-top: 7px;
-        margin-right: 25px;
-        border-radius: 0 40px 0 40px;
-    }
-    .e {
-        width: 190px;
-        height: 66px;
-        margin-top: 7px;
-        margin-left: 70px;
-        border-radius: 40px 0 40px 0;
-    }
-    .father {
-        display: flex;
-        margin-left: 90px;
-        margin-top: 50px;
-    }
-}
+
+
+
+
+
+
