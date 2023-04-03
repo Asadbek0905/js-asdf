@@ -6,10 +6,11 @@
 //--------------------------------------(4)
 
 
-    // let myFunc = (a) => {
-    //     alert(a.reverse(a))
-    // }
-    // alert(myFunc(a))
+    let myFunc = (a) => {
+        let arr = [1,2,3,4,5]
+        alert(a.reverse(arr))
+    }
+    alert(myFunc(a))
 
 
 
