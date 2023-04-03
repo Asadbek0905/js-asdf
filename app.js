@@ -6,11 +6,14 @@
 //--------------------------------------(4)
 
 
-// let myFunc = (a) => {
-//     return a.reverse(a)
-// }
+let t = document.querySelector(".t")
+t.onclick = () => {
+    let myFunc = (a) => {
+        return a.reverse(a)
+    }
 
-// console.log(myFunc([1, 2, 3, 4, 5]));
+    console.log(myFunc([1, 2, 3, 4, 5]));
+}
 
 
 
