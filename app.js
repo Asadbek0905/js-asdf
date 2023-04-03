@@ -80,29 +80,8 @@ console.log(Myfunc(5, 15));
 
 
 
-let a = +prompt("2-xonali son kiriting")
 let MyFunc = (a) => {
-    if (a <= 19) {
-        return 1
-    } else if (a <= 29) {
-        return 2
-    } else if (a <= 39) {
-        return 3
-    } else if (a <= 49) {
-        return 4
-    } else if (a <= 59) {
-        return 5
-    } else if (a <= 69) {
-        return 6
-    } else if (a <= 79) {
-        return 7
-    } else if (a <= 89) {
-        return 8
-    } else if (a <= 99){
-        return 9
-    }else{
-        return 1
-    }
+    return Math.floor(a / 10)
 }
 
-console.log(MyFunc());
+console.log(MyFunc(60));
