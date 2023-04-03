@@ -28,7 +28,7 @@ w.onclick = () => {
     let a = +prompt("1-sonni kiriting")
     let b = +prompt("2-sonni kiriting")
     let c = +prompt("3-sonni kiriting")
-    
+
     let name = (a, b, c) => {
         let funcm = (a, b, c) => {
             if (a >= b && a >= c) {
@@ -39,7 +39,7 @@ w.onclick = () => {
                 return c
             }
         }
-    
+
         let func = () => {
             if (a <= b && a >= c) {
                 return a
@@ -49,10 +49,10 @@ w.onclick = () => {
                 return c
             }
         }
-    
+
         return `Max: ${funcm(a, b, c)}, Min: ${func()}`
     }
-    
+
     alert(name(a, b, c))
 }
 
@@ -74,13 +74,17 @@ w.onclick = () => {
 //------------------------------------------------(2)
 
 
-// let a = +prompt("niqob sonini kiriting")
-// let b = +prompt("odam Sonni kiriting")
+let e = document.querySelector(".e")
 
-// function Myfunc(a, b) {
-//     return Math.floor(b / a)
-// }
-// console.log(Myfunc(a, b));
+e.onclick = () => {
+    let a = +prompt("niqob sonini kiriting")
+    let b = +prompt("odam Sonni kiriting")
+
+    function Myfunc(a, b) {
+        return Math.floor(b / a)
+    }
+    console.log(Myfunc(a, b));
+}
 
 
 
@@ -91,9 +95,12 @@ w.onclick = () => {
 //---------------------------------------------(3)
 
 
-// let a = +prompt("son kiritng")
-// let MyFunc = (a) => {
-//     return Math.floor(a / 10)
-// }
+let r = document.querySelector(".r")
+r.onclick = () => {
+    let a = +prompt("son kiritng")
+    let MyFunc = (a) => {
+        return Math.floor(a / 10)
+    }
 
-// console.log(MyFunc(a));
+    console.log(MyFunc(a));
+}
