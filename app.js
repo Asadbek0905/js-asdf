@@ -1,55 +1,108 @@
-let flex = document.querySelector(".flex")
-let btn = document.querySelector(".dflex")
-let just = document.querySelector(".just")
-let just1 = document.querySelector(".just1")
-let ali = document.querySelector(".ali")
-let ali1 = document.querySelector(".ali1")
-let box = document.querySelectorAll(".box")
-let just2 = document.querySelector(".just2")
-let ali2 = document.querySelector(".ali2")
 
-btn.onclick = () => {
-    flex.style.display = "flex"
+
+
+
+
+//--------------------------------------(4)
+
+
+let myFunc = (a) => {
+    return a.reverse(a)
 }
 
-just2.onclick = () => {
-    flex.style.justifyContent = "start"
+console.log(myFunc([1, 2, 3, 4, 5]));
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------(1)
+
+
+let name = (a, b, c) => {
+    let funcm = (a, b, c) => {
+        if (a >= b && a >= c) {
+            return a
+        } else if (b >= a && b >= c) {
+            return b
+        } else if (c >= a && c >= b) {
+            return c
+        }
+    }
+
+    let func = () => {
+        if (a <= b && a >= c) {
+            return a
+        } else if (b <= a && b <= c) {
+            return b
+        } else if (c >= a && c >= b) {
+            return c
+        }
+    }
+
+    return `Max: ${funcm(a, b, c)}, Min: ${func()}`
 }
 
-just.onclick = () => {
-    flex.style.justifyContent = "center"
+console.log(name(50, 30, 70));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------(2)
+
+function Myfunc(a, b) {
+    return Math.floor(b / a)
+}
+console.log(Myfunc(5, 15));
+
+
+
+
+
+
+
+//---------------------------------------------(3)
+
+
+
+let a = +prompt("2-xonali son kiriting")
+let MyFunc = (a) => {
+    if (a <= 19) {
+        return 1
+    } else if (a <= 29) {
+        return 2
+    } else if (a <= 39) {
+        return 3
+    } else if (a <= 49) {
+        return 4
+    } else if (a <= 59) {
+        return 5
+    } else if (a <= 69) {
+        return 6
+    } else if (a <= 79) {
+        return 7
+    } else if (a <= 89) {
+        return 8
+    } else if (a <= 99){
+        return 9
+    }else{
+        return 1
+    }
 }
 
-just1.onclick = () => {
-    flex.style.justifyContent = "end"
-}
-
-ali.onclick = () => {
-    flex.style.alignItems = "center"
-}
-ali2.onclick = () => {
-    flex.style.alignItems = "start"
-}
-
-ali1.onclick = () => {
-    flex.style.alignItems = "end"
-}
-
-
-
-
-
-
-
-let vtn = document.querySelector(".vtn")
-
-
-vtn.onclick = () => {
-    let a = +prompt("1-qizda qancha pul borligini yozing")
-    let b = +prompt("2-qizda qancha pul borligini yozing")
-    let c = +prompt("3-qizda qancha pul borligini yozing")
-    let d = +prompt("4-qizda qancha pul borligini yozing")
-    let f = +prompt("Sovg'aning narxini yozing")
-    let all = a + b + c + d
-    all <= f ? alert("Ha pulingiz yetadi") : alert("Yoq pulingiz yetmaydi")
-}
+console.log(MyFunc());
