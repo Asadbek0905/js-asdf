@@ -86,7 +86,7 @@ e.onclick = () => {
     function Myfunc(a, b) {
         return Math.floor(b / a)
     }
-    console.log(Myfunc(a, b));
+    alert(Myfunc(a, b))
 }
 
 
