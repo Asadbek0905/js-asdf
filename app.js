@@ -1,16 +1,8 @@
-
-
-
-
-
-//--------------------------------------(4)
-
-
-    let myFunc = (a) => {
-        let arr = [1,2,3,4,5]
-        alert(a.reverse(arr))
-    }
-    alert(myFunc(a))
+// let list = document.querySelector(".list-group")
+// let bnt = document.querySelector(".btn")
+// bnt.onclick = () =>{
+//     !list.classList.contains("active") ? list.classList.add("active") : list.classList.remove("active")
+// }
 
 
 
@@ -20,38 +12,39 @@
 
 
 
-//----------------------------------------------------------(1)
+
+let h3 = document.querySelector("h3")
+let start = document.querySelector(".btn-primary")
+let stop = document.querySelector(".btn-secondary")
+let reset = document.querySelector(".btn-danger")
 
 
-    // let a = +prompt("1-sonni kiriting")
-    // let b = +prompt("2-sonni kiriting")
-    // let c = +prompt("3-sonni kiriting")
+start.onclick = () => {
+    let i = 0;
+    setInterval(() => {
+        h3.innerHTML = i;
+        let a = 1
+        i += a
+    }, 1000)
+    i++
+}
 
-    // let name = (a, b, c) => {
-    //     let funcm = (a, b, c) => {
-    //         if (a >= b && a >= c) {
-    //             return a
-    //         } else if (b >= a && b >= c) {
-    //             return b
-    //         } else if (c >= a && c >= b) {
-    //             return c
-    //         }
-    //     }
 
-    //     let func = () => {
-    //         if (a <= b && a >= c) {
-    //             return a
-    //         } else if (b <= a && b <= c) {
-    //             return b
-    //         } else if (c >= a && c >= b) {
-    //             return c
-    //         }
-    //     }
+stop.onclick = () => {
+    h3 = "0"
 
-    //     return `Max: ${funcm(a, b, c)}, Min: ${func()}`
-    // }
+}
 
-    // alert(name(a, b, c))
+
+
+reset.onclick = () => {
+    let i = 0;
+    setInterval(() => {
+        time.innerHTML = i;
+        let a = 0
+        i = a
+    })
+}
 
 
 
@@ -64,34 +57,3 @@
 
 
 
-
-
-
-
-//------------------------------------------------(2)
-
-
-
-    // let a = +prompt("niqob sonini kiriting")
-    // let b = +prompt("odam Sonni kiriting")
-
-    // function Myfunc(a, b) {
-    //     return Math.floor(b / a)
-    // }
-    // alert(Myfunc(a, b))
-
-
-
-
-
-
-
-//---------------------------------------------(3)
-
-
-    // let x = +prompt("son kiritng")
-    // let MyFunc = (x) => {
-    //     return Math.floor(x / 10)
-    // }
-
-    // console.log(MyFunc(x));
