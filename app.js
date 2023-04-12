@@ -30,21 +30,20 @@ start.onclick = () => {
 }
 
 
-stop.onclick = () => {
-    h3 = "0"
-
-}
-
+stop.addEventListener("click", function () {
+    h3 = ""
+  });
 
 
-reset.onclick = () => {
+
+  reset.addEventListener("click", function (e) {
     let i = 0;
     setInterval(() => {
-        time.innerHTML = i;
+        h3.innerHTML = i;
         let a = 0
-        i = a
-    })
-}
+        i += a
+    },)
+  });
 
 
 
