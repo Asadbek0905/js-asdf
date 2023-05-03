@@ -1,56 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
 }
 
-.list-group-item{
-    cursor: pointer;
-}
-.list-group-item:hover{
-    background: rgb(70, 139, 207);
-}
-
-.list-group{
-    width: 800px;
-    margin: auto;
-    transition: 1s;
-}
-
-.active{
-    transform: translateY(-220px);
-    transition: 1s;
-}
-
-
-
-
-
-
-
-
-
-.box{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgb(125, 72, 178);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.button-group{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-h3{
-    margin: 0;
-}
-.btn{
-    margin-left: 10px;
+body{
+    background: url(https://avatars.mds.yandex.net/i?id=acc380914a7d176305665e2a5ba6f18a-5419040-images-thumbs&n=13);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

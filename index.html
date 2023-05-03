@@ -5,42 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ОЫ</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(https://i.ytimg.com/vi/AmnqQDSmRks/maxresdefault.jpg);
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .count{
+            color: #fff;
+            font-size: 78px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        header{
+            background: url(https://avatars.mds.yandex.net/i?id=acc380914a7d176305665e2a5ba6f18a-5419040-images-thumbs&n=13);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .increament{
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            background: blue;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .reset{
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            background: green;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-
-
-    <!-- <ul class="list-group"> 
-        <li class="list-group-item">Home</li> 
-        <li class="list-group-item">About</li> 
-        <li class="list-group-item">Contact</li> 
-        <li class="list-group-item">Blog</li> 
-        <li class="list-group-item">Number</li> 
-        <button class="btn btn-success mt-5">Buttoncha</button> 
-    </ul>  -->
-
-
-
-
-
-    <div class="box">
-        <h3 class="h">0</h3>
-    </div>
-    <div class="button-group">
-        <button class="btn btn-primary">Start</button>
-        <button class="btn btn-secondary">Stop</button>
-        <button class="btn btn-danger">Reset</button>
-    </div>
-
-
-
-
-
-
+<audio src="./click.mp3"></audio>
+    <header>
+        <h1 class="count">0</h1>
+    </header>
+    <button class="increament"><b>+</b></button> <br>
+    <button class="reset">clear</button>
 
 
 

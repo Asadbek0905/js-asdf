@@ -1,58 +1,23 @@
-// let list = document.querySelector(".list-group")
-// let bnt = document.querySelector(".btn")
-// bnt.onclick = () =>{
-//     !list.classList.contains("active") ? list.classList.add("active") : list.classList.remove("active")
-// }
 
 
 
+let count = document.querySelector(".count")
+let increament = document.querySelector(".increament")
+let reset = document.querySelector(".reset")
 
+let audio = document.querySelector("audio")
 
-
-
-
-
-
-let h3 = document.querySelector("h3")
-let start = document.querySelector(".btn-primary")
-let stop = document.querySelector(".btn-secondary")
-let reset = document.querySelector(".btn-danger")
-
-
-start.onclick = () => {
-    let i = 0;
-    setInterval(() => {
-        h3.innerHTML = i;
-        let a = 1
-        i += a
-    }, 1000)
-    i++
+var num = 0
+increament.onclick = () => {
+    num >= 99 ? num = 0 : num++
+    audio.play()
 }
 
-
-stop.addEventListener("click", function () {
-    h3 = ""
-  });
-
-
-
-  reset.addEventListener("click", function (e) {
-    let i = 0;
-    setInterval(() => {
-        h3.innerHTML = i;
-        let a = 0
-        i += a
-    },)
-  });
-
-
-
-
-
-
-
-
-
-
-
+reset.onclick = () => {
+    // let num2 = 0;
+    num = 0;
+}
+setInterval(() => {
+    count.innerHTML = num
+}, 100)
 
